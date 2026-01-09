@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceddo Benz | Music Hub</title>
+    <link rel="stylesheet" href="assets/music.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero-banner" data-component="HeroBanner">
+        <div class="hero-content">
+          <p class="eyebrow">Ceddo Benz · Premium Sound</p>
+          <h1>Les sons qui font vibrer votre prochaine session.</h1>
+          <p class="hero-subtitle">
+            Découvrez des previews exclusives et choisissez vos beats par ambiance en un clic.
+          </p>
+          <div class="hero-actions">
+            <button class="primary" type="button" data-action="subscribe">
+              S'abonner
+            </button>
+            <button class="ghost" type="button" data-action="play-featured">
+              Lire le preview du jour
+            </button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="label">Now playing</p>
+          <h3 data-now-playing>—</h3>
+          <p class="muted" data-now-playing-meta>Choisissez un preview pour lancer la lecture.</p>
+        </div>
+      </section>
+
+      <section class="section" data-component="PreviewTracksGrid" data-state="loading">
+        <header class="section-header">
+          <div>
+            <h2>Previews de tracks</h2>
+            <p class="muted">Extraits rapides pour capter l'énergie.</p>
+          </div>
+          <span class="pill">Ceddo Benz</span>
+        </header>
+        <div class="section-body">
+          <div class="tracks-grid" data-preview-grid></div>
+          <div class="section-status" data-preview-status></div>
+        </div>
+      </section>
+
+      <section class="section" data-component="BeatsCarousel" data-state="loading">
+        <header class="section-header">
+          <div>
+            <h2>Beats par catégorie</h2>
+            <p class="muted">Filtrez par mood pour trouver votre prod.</p>
+          </div>
+          <div class="filters" data-category-filters>
+            <button class="filter active" type="button" data-category="all">Tous</button>
+            <button class="filter" type="button" data-category="trap">Trap</button>
+            <button class="filter" type="button" data-category="drill">Drill</button>
+            <button class="filter" type="button" data-category="afro">Afro</button>
+            <button class="filter" type="button" data-category="rnb">R&B</button>
+          </div>
+        </header>
+        <div class="section-body">
+          <div class="beats-carousel" data-beats-carousel></div>
+          <div class="section-status" data-beats-status></div>
+        </div>
+      </section>
+
+      <section class="section" data-component="TopPremiumList" data-state="loading">
+        <header class="section-header">
+          <div>
+            <h2>Top premium</h2>
+            <p class="muted">Les favoris pour les abonnés.</p>
+          </div>
+          <button class="ghost" type="button" data-action="subscribe">
+            Débloquer les versions complètes
+          </button>
+        </header>
+        <div class="section-body">
+          <ol class="premium-list" data-premium-list></ol>
+          <div class="section-status" data-premium-status></div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" data-component="BottomNav">
+      <button class="nav-item active" type="button">Home</button>
+      <button class="nav-item" type="button">Recherche</button>
+      <button class="nav-item" type="button">Bibliothèque</button>
+      <button class="nav-item" type="button">Profil</button>
+    </nav>
+
+    <script src="assets/music.js"></script>
+  </body>
+</html>
